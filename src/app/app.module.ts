@@ -43,6 +43,10 @@ const myRoute:Routes=[
   {
     path:"quotes",
     component:QuotesAppComponent
+  },
+  {
+    path:"public",
+    component:PublicApiComponent
   }
 
 ]
