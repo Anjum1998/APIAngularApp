@@ -8,6 +8,23 @@ import { UsDataComponent } from './us-data/us-data.component';
 import { PublicApiComponent } from './public-api/public-api.component';
 import { UserInfoiComponent } from './user-infoi/user-infoi.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:PassengerDataComponent
+  },
+  {
+    path:"us",
+    component:UsDataComponent
+  },
+  {
+    path:"info",
+    component:UserInfoiComponent
+
+  }
+]
 
 @NgModule({
   declarations: [
@@ -20,7 +37,8 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
