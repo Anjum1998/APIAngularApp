@@ -12,6 +12,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { QuotesAppComponent } from './quotes-app/quotes-app.component';
 
 const myRoute:Routes=[
   {
@@ -38,6 +39,10 @@ const myRoute:Routes=[
   {
     path:"todo",
     component:ToDoComponent
+  },
+  {
+    path:"quotes",
+    component:QuotesAppComponent
   }
 
 ]
@@ -52,7 +57,8 @@ const myRoute:Routes=[
     NavbarComponent,
     ProductListComponent,
     UserDataComponent,
-    ToDoComponent
+    ToDoComponent,
+    QuotesAppComponent
   ],
   imports: [
     BrowserModule,
