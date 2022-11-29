@@ -7,6 +7,7 @@ import { PassengerDataComponent } from './passenger-data/passenger-data.componen
 import { UsDataComponent } from './us-data/us-data.component';
 import { PublicApiComponent } from './public-api/public-api.component';
 import { UserInfoiComponent } from './user-infoi/user-infoi.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UserInfoiComponent } from './user-infoi/user-infoi.component';
     PassengerDataComponent,
     UsDataComponent,
     PublicApiComponent,
-    UserInfoiComponent
+    UserInfoiComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
