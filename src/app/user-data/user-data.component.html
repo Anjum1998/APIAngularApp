@@ -1,1 +1,39 @@
 <app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="container">
+            <div class="row g-3">
+             
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of view.users">
+
+                    <div class="card" style="height:30rem">
+                        <img height="180px" src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-title">UserID:{{i.id}} </p>
+                        <p class="card-title">First Name:{{i.firstName}} </p>
+                        <p class="card-text">Lastname :{{i.lastName}}</p>
+                        <p class="card-text">MaidenName: {{i.maidenName}}</p>
+                        <p class="card-title">Age:{{i.age}} </p>
+                        <p class="card-title">Gender:{{i.gender}} </p>
+                        <p class="card-title">Email:{{i.email}} </p>
+                        <p class="card-title">Phone:{{i.phone}} </p>
+                        
+
+                        </div>
+                    </div>
+
+                </div>
+                
+           
+
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
