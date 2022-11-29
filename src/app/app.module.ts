@@ -9,6 +9,7 @@ import { PublicApiComponent } from './public-api/public-api.component';
 import { UserInfoiComponent } from './user-infoi/user-infoi.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const myRoute:Routes=[
   {
@@ -23,6 +24,10 @@ const myRoute:Routes=[
     path:"info",
     component:UserInfoiComponent
 
+  },
+  {
+    path:"product",
+    component:ProductListComponent
   }
 ]
 
@@ -33,7 +38,8 @@ const myRoute:Routes=[
     UsDataComponent,
     PublicApiComponent,
     UserInfoiComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
